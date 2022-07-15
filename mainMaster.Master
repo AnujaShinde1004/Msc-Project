@@ -1,0 +1,117 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="mainMaster.master.cs" Inherits="ICCS_Canteen.mainMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Iccs canteen</title>
+    <link rel="Stylesheet" href="Style/Main1.css" />
+    <link rel="Stylesheet" href="Style/Menu.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style type="text/css">
+        .auto-style1 {
+            left: -8px;
+            top: 0px;
+            width: 30px;
+        }
+        .auto-style2 {
+            width: 101px;
+            float: left;
+            height: 67px;
+        }
+        .auto-style5 {
+            height: 71px;
+            width: 96px;
+        }
+        .auto-style6 {
+            height: 81px;
+        }
+        .auto-style8 {
+            height: 46px;
+            width: 1100px;
+        }
+        .ab {
+             height: 41px;
+            align-content : end;
+            width: 96px;
+        }
+        .cd {
+            height: 33px;
+            align-content : end;
+            width: 126px;
+        }
+       
+        </style>
+
+    </head>
+<body>
+    <form id="formMain" runat="server">
+        <div class="container">
+            <div class="divbody">
+                <div class="header">
+                    <div class="auto-style2">
+                        <a href="studhome.aspx">
+                            <img src="images/indira.jfif" class="auto-style5" />
+                            </a>
+                    </div>
+
+                    <div flot="center" class="auto-style6">
+                        
+                      <h1> <strong>Iccs canteen</strong></h1>
+                         <h2 class="cd"><a href="homePage.aspx">Logout</a>
+                        </h2>
+                        <h2 class="ab">
+                            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                        </h2>
+                       
+                    </div>    
+
+                </div>
+                <div>
+                    <ul class="menuTemplate4 decor4_1">
+                        <li><a href="studhome.aspx" class="auto-style1">Home</a></li>
+                        <li class="separator"></li>
+                        <li><a href="#" class="arrow" style="left: 0px; top: 0px; width: 87px">Menu Category</a>
+                            <div class="drop decor4_2" style="width: 150px;">
+                                <div class='left'>
+                                    <b> <a href="ChaatAndSnacks.aspx">Snacks and ColdDrink</a><br />
+                                    <a href="breckfast.aspx">Breackfast</a><br />
+                                     <a href="veg.aspx">Veg</a><br />
+                                      <a href="nonveg.aspx">Non-veg</a><br />
+                                       <a href="icecream.aspx">Ice-Cream</a><br />
+                                       
+                                        
+                                    </b>
+                                </div>
+                               
+                                <div style='clear: both;'></div>
+                            </div>
+                        </li>
+                          <li class="separator"></li>
+                        <li><a href="Special.aspx?C=10">Special</a></li>
+                        
+                        <li class="separator"></li>
+                        <li><a href="FeedBack1.aspx">Feedback</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                
+                    <footer id="footer" class="auto-style8">  
+     <span>
+                        <br />
+                        Created By<a href="https://iccs.ac.in/">@Indira College Of Commerce and Science</a> | <span class="far fa-copyright"></span> 2022 All rights reserved.</span> 
+</footer> 
+                </div>
+            </div>
+
+       
+
+    </form>
+</body>
+
+</html>

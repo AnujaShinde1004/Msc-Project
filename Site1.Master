@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ICCS_Canteen.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Style/main.css" rel="stylesheet" />
+  <style>
+      .imgb {
+          width: 1096px;
+          height: 188px;
+      }
+
+      
+
+      .auto-style1 {
+          width: 1093px;
+          color:#00ffff;
+      }
+      
+      .con {
+           width: 1100px;
+           height: auto;
+            margin: auto;
+            background-color:#F1FAEE;
+      }
+
+      
+
+      .auto-style2 {
+          width: 1100px;
+          height: 408px;
+          margin: auto;
+          background-color: #F1FAEE;
+      }
+      .auto-style3{
+          text-align:center;
+      }
+     
+
+      
+
+  </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     
+</head>
+<body>
+    <div class="con">
+       <header class="header">  
+              <h1 class ="auto-style3">ICCS Canteen System</h1>  
+          </header> 
+         <div >
+             <img src="images/adminpanel.jpg" class="imgb"  />
+        </div>
+
+   <table class="auto-style1">
+       <tr>
+           <td>
+               <a href="adminHome.aspx">Home</a>
+           </td>
+           <td>
+               <a href="food.aspx">Food</a>
+           </td>
+           <td>
+               <a href="CustomerDetail.aspx">Customer Detail</a>
+           </td>
+           <td>
+               <a href="Staff info.aspx">Staff detail</a>
+           </td>
+           <td>
+               <a href="OrderDetail.aspx">View Order</a>
+           </td>
+           <td>
+               <a href="PaymentDetail.aspx">Payment</a>
+           </td>
+           <td>
+               <a href="view feedback.aspx">View Feedback</a> 
+           </td>
+           <td>
+                 <a href="homepage.aspx">Logout</a> 
+           </td>
+           
+       </tr>
+   </table>
+               
+       
+        
+      
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+         </form>
+        <footer id="footer">  
+                <span>Created By<a href="https://iccs.ac.in/">@Indira College Of Commerce and Science</a> | <span class="far fa-copyright"></span> 2022 All rights reserved.</span> 
+          </footer>  
+   
+ </div>
+</body>
+</html>
